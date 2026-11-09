@@ -6,11 +6,13 @@ Analizar el comportamiento de uso de servicios de telecomunicaciones (llamadas, 
 ---
 
 ## 📁 Datasets Utilizados
-* **users / Perfiles de usuario:** Datos demográficos del cliente (`user_id`, `age`, `plan`).
-* **Registros de consumo:** Métricas agregadas por usuario:
-  * `cant_mensajes`: Cantidad total de mensajes enviados.
-  * `cant_llamadas`: Número de llamadas realizadas.
-  * `cant_minutos_llamada`: Total de minutos consumidos en llamadas.
+El proyecto trabaja con tres archivos:
+* **`plans.csv` — Planes:** características y tarifas de los planes Básico y Premium.
+* **`users_latam.csv` — Usuarios:** datos demográficos y de registro de cada cliente (`user_id`, `age`, `city`, `reg_date`, `plan`).
+* **`usage.csv` — Consumo:** registros individuales de mensajes y llamadas (`user_id`, `type`, `date`, `duration`, `length`), que se agregaron por usuario para obtener:
+  * `cant_mensajes`: cantidad total de mensajes enviados.
+  * `cant_llamadas`: número de llamadas realizadas.
+  * `cant_minutos_llamada`: total de minutos consumidos en llamadas.
 
 ---
 
